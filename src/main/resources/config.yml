@@ -1,0 +1,44 @@
+# ++++++++++++++++++++++++
+# ++  Simple Essentials ++
+# ++  Mady by ChefPilz  ++
+# ++    Version 1.0     ++
+# ++       Thanks       ++
+# ++        for         ++
+# ++    downloading     ++
+# ++++++++++++++++++++++++
+
+#-----------------------------General Options------------------------#
+Enable-Plugin: true
+Plugin-Prefix: "&f[&aSE&f]"
+Plugin-No-Permissions: "&cNo Permissions!"
+Plugin-Usage: "&cUsage:"
+Plugin-Player-Offline: "&cThis player is not online!"
+Plugin-World-Not-Found: "&cThis world doesn't exist!"
+#----------------------------Debug Options----------------------------#
+Plugin-Cmd-Debug: true
+Plugin-Cmd-Debug-Prefix: "&f[&aSE&f]"
+#----------------------------Time Options-----------------------------#
+Plugin-Day-Bc: true
+Plugin-Night-Bc: true
+#---------------------------Weather Options---------------------------#
+Plugin-Sun-Bc: true
+Plugin-Rain-Bc: true
+Plugin-Storm-Bc: true
+#---------------------------Heal Options------------------------------#
+Plugin-Heal-Silent: true
+#----------------------------Feed Options-----------------------------#
+Plugin-Feed-Silent: true
+#-----------------------OpenInventory Options-------------------------#
+Plugin-Open-Inv-Silent: true
+Plugin-Clear-Inv-Silent: true
+#--------------------------Workbench Options--------------------------#
+Plugin-Workbench-Silent: true
+#--------------------------EnderChest Options-------------------------#
+Plugin-Enderchest-Open-Silent: true
+Plugin-Enderchest-Force-Open-Silent: true
+Plugin-Enderchest-Clear-Silent: true
+#----------------------------Vanish Options---------------------------#
+Plugin-Vanish-Other-Silent: true
+#----------------------------Join & Quit Options-----------------------------#
+Plugin-Join-Msg: "&f[&a+&f] &f%player%"
+Plugin-Quit-Msg: "&f[&c-&f] &f%player%"

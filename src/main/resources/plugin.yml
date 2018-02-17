@@ -1,0 +1,43 @@
+name: SimpleEssentials
+author: ChefPilz
+version: 1.0
+main: me.alex.simpleessentials.main.Main
+commands:
+   info:
+      description: Gives you infos about the plugin
+   gm:
+      description: Changes your Gamemode
+   day:
+      description: Switches the time to day
+   night:
+      description: Switches the time to night
+   fly:
+      description: Lets you fly
+   debug:
+      description: Shows debug infos
+   test:
+      description: test
+   sun:
+      description: Switches the weather to sun
+   rain:
+      description: Switches the weather to rain
+   storm:
+      description: Switches the weather to storm
+   uuid:
+      description: Show you the UUID of the given player
+   heal:
+      description: Heals the player
+   inventory:
+      description: Opens the player inventory
+      aliases: [inv]
+   workbench:
+      description: Open the craftingtable
+      aliases: [wb,ct,craftingtable]
+   enderchest:
+      description: Open the enderchest
+      aliases: [ec]
+   feed:
+      description: Feeds the player
+   vanish:
+      description: Vanishes the player
+      aliases: [v]
