@@ -23,6 +23,10 @@ public abstract class CommandUtils extends Strings {
         return args.equalsIgnoreCase(argument);
     }
 
+    public void noPlayer() {
+        Bukkit.getConsoleSender().sendMessage("[SE] You can only use this command as a player");
+    }
+
     public boolean isVanished(Player p) {
         List<String> list = Config.getConfig("vanishedPlayers").getStringList("Vanish");
         return (list.contains(p.getUniqueId().toString()));

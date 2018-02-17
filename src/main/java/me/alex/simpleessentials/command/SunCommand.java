@@ -21,8 +21,8 @@ public class SunCommand extends CommandUtils implements CommandExecutor {
         String noWorldFound = prefix + " " + getPluginNoWorldFound();
         String perms = "SimpleEssentials.sun.";
         String permsAll = getPermsAll();
-        String sunSelf = prefix + " " + "§aSwitched weather to sun";
-        String sunOther = prefix + " " + "§aSwitched weather to sun in world §f";
+        String sunSelf = prefix + " " + "Â§aSwitched weather to sun";
+        String sunOther = prefix + " " + "Â§aSwitched weather to sun in world Â§f";
         boolean sunBc = isPluginSunBc();
 
         if (sender instanceof Player) {
@@ -43,7 +43,7 @@ public class SunCommand extends CommandUtils implements CommandExecutor {
                             psend(p, sunOther + w.getName());
                             if (sunBc) {
                                 for (Player player : w.getPlayers()) {
-                                    psend(player, prefix + " §aThe weather in your world was switched to sun by §f" + p.getName());
+                                    psend(player, prefix + " Â§aThe weather in your world was switched to sun by Â§f" + p.getName());
                                 }
                             }
                         } else psend(p, noWorldFound);

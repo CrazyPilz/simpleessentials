@@ -76,6 +76,7 @@ public class Main extends JavaPlugin {
             getCommand("enderchest").setExecutor(new EnderChestCommand());
             getCommand("feed").setExecutor(new FeedCommand());
             getCommand("vanish").setExecutor(new VanishCommand());
+            getCommand("ping").setExecutor(new PingCommand());
 
             //Register Events
             PluginManager pm = Bukkit.getPluginManager();

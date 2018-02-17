@@ -21,12 +21,12 @@ public class EnderChestCommand extends CommandUtils implements CommandExecutor {
         String noPlayerFound = prefix + " " + getPluginNoPlayerFound();
         String perms = "SimpleEssentials.enderchest.";
         String permsAll = getPermsAll();
-        String ecSelf = prefix + " §aOpened enderchest";
-        String ecOther = prefix + " §aOpened the enderchest from §f";
-        String ecClear = prefix + " §aYou cleared the enderchest of §f";
-        String ecClearMsg = prefix + " §aYour enderchest was cleared by §f";
-        String ecMsg = prefix + " §aYou opened your enderchest thanks to §f";
-        String ecOtherMsg = " §aopened your enderchest";
+        String ecSelf = prefix + " Â§aOpened enderchest";
+        String ecOther = prefix + " Â§aOpened the enderchest from Â§f";
+        String ecClear = prefix + " Â§aYou cleared the enderchest of Â§f";
+        String ecClearMsg = prefix + " Â§aYour enderchest was cleared by Â§f";
+        String ecMsg = prefix + " Â§aYou opened your enderchest thanks to Â§f";
+        String ecOtherMsg = " Â§aopened your enderchest";
         boolean ecForceOpenSilent = isPluginEnderchestForceOpenSilent();
         boolean ecClearSilent = isPluginEnderchestClearSilent();
         boolean ecOtherSilent = isPluginEnderchestOpenSilent();
@@ -46,7 +46,7 @@ public class EnderChestCommand extends CommandUtils implements CommandExecutor {
                             p.openInventory(tplayer.getEnderChest());
                             psend(p, ecOther + tplayer.getName());
                             if (!ecOtherSilent) {
-                                psend(tplayer, prefix + " §f" + p.getName() + ecOtherMsg);
+                                psend(tplayer, prefix + " Â§f" + p.getName() + ecOtherMsg);
                             }
                         } else psend(p, noPlayerFound);
                     } else psend(p, noPerms);
@@ -66,7 +66,7 @@ public class EnderChestCommand extends CommandUtils implements CommandExecutor {
                         if (perm(p, perms + "open") || perm(p, perms + "*") || perm(p, permsAll)) {
                             if (tplayer != null) {
                                 tplayer.openInventory(tplayer.getEnderChest());
-                                psend(p, prefix + " §aYou forced §f" + tplayer.getName() + " §ato open their enderchest");
+                                psend(p, prefix + " Â§aYou forced Â§f" + tplayer.getName() + " Â§ato open their enderchest");
                                 if (!ecForceOpenSilent) {
                                     psend(tplayer, ecMsg + p.getName());
                                 } else psend(tplayer, ecSelf);

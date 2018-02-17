@@ -15,7 +15,7 @@ public class AutoFlyListener extends CommandUtils implements Listener {
     public void onPlayerJoin(PlayerJoinEvent e) {
         String prefix = getPluginPrefix();
         String fP = "flyPlayers";
-        String fly = prefix + " §f[§aEnabled§f] Fly";
+        String fly = prefix + " Â§f[Â§aEnabledÂ§f] Fly";
 
         Player p = e.getPlayer();
         if (!Config.getFile(fP).exists()) {

@@ -25,8 +25,8 @@ public class DebugCommand extends CommandUtils implements CommandExecutor {
         final String prefix = getPluginPrefix();
         final String usage = prefix + " " + getPluginUsage();
         final String noPerms = prefix + " " + getPluginNoPerms();
-        final String debugOn = prefix + " §f[§aEnabled§f] §fDebug";
-        final String debugOff = prefix + " §f[§cDisabled§f] §fDebug";
+        final String debugOn = prefix + " Â§f[Â§aEnabledÂ§f] Â§fDebug";
+        final String debugOff = prefix + " Â§f[Â§cDisabledÂ§f] Â§fDebug";
         final String perms = "SimpleEssentials.debug";
         final String permsall = getPermsAll();
         String dP = "debugPlayers";

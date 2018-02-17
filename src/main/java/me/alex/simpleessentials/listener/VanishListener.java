@@ -21,7 +21,9 @@ public class VanishListener extends CommandUtils implements Listener {
         for (String s : Config.getConfig("vanishedPlayers").getStringList("Vanish")) {
             UUID uuid = UUID.fromString(s);
             Player vPlayer = Bukkit.getPlayer(uuid);
-            p.hidePlayer(Main.getPlugin(), vPlayer);
+            if (vPlayer != null) {
+                p.hidePlayer(Main.getPlugin(), vPlayer);
+            }
         }
     }
 
@@ -32,7 +34,9 @@ public class VanishListener extends CommandUtils implements Listener {
         for (String s : Config.getConfig("vanishedPlayers").getStringList("Vanish")) {
             UUID uuid = UUID.fromString(s);
             Player vPlayer = Bukkit.getPlayer(uuid);
-            p.hidePlayer(Main.getPlugin(), vPlayer);
+            if (vPlayer != null) {
+                p.hidePlayer(Main.getPlugin(), vPlayer);
+            }
         }
     }
 

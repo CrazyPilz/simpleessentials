@@ -27,9 +27,9 @@ public class VanishCommand extends CommandUtils implements CommandExecutor {
         String noPlayerFound = prefix + " " + getPluginNoPlayerFound();
         String perms = "SimpleEssentials.vanish.";
         String permsAll = getPermsAll();
-        String vOn = prefix + " §f[§aEnabled§f] §fVanish";
-        String vOff = prefix + " §f[§cDisabled§f] §fVanish";
-        String vOtherMsg = vOn + " §athanks to §f";
+        String vOn = prefix + " Â§f[Â§aEnabledÂ§f] Â§fVanish";
+        String vOff = prefix + " Â§f[Â§cDisabledÂ§f] Â§fVanish";
+        String vOtherMsg = vOn + " Â§athanks to Â§f";
         String vP = "vanishedPlayers";
         boolean vOtherSilent = isPluginVanishSilent();
 
@@ -68,7 +68,7 @@ public class VanishCommand extends CommandUtils implements CommandExecutor {
                                 Config.getConfig("vanishedPlayers").set("Vanish", list);
                                 save();
                                 vanish(tPlayer);
-                                psend(p, vOn + " §afor §f" + tPlayer.getName());
+                                psend(p, vOn + " Â§afor Â§f" + tPlayer.getName());
                                 if (!vOtherSilent) {
                                     psend(tPlayer, vOn + vOtherMsg + p.getName());
                                 } else psend(tPlayer, vOn);
@@ -77,7 +77,7 @@ public class VanishCommand extends CommandUtils implements CommandExecutor {
                                 Config.getConfig("vanishedPlayers").set("Vanish", list);
                                 save();
                                 unVanish(tPlayer);
-                                psend(p, vOff + " §afor §f" + tPlayer.getName());
+                                psend(p, vOff + " Â§afor Â§f" + tPlayer.getName());
                                 if (!vOtherSilent) {
                                     psend(tPlayer, vOff + vOtherMsg + p.getName());
                                 } else psend(tPlayer, vOff);

@@ -18,9 +18,9 @@ public class HealCommand extends CommandUtils implements CommandExecutor {
         String noPlayerFound = prefix + " " + getPluginNoPlayerFound();
         String perms = "SimpleEssentials.heal.";
         String permsAll = getPermsAll();
-        String healSelf = prefix + " §aHealed yourself";
-        String healOther = prefix + " §aHealed §f";
-        String healMsg = prefix + " §aYou have been healed";
+        String healSelf = prefix + " Â§aHealed yourself";
+        String healOther = prefix + " Â§aHealed Â§f";
+        String healMsg = prefix + " Â§aYou have been healed";
         boolean healSilent = isPluginHealSilent();
 
         if (sender instanceof Player) {
@@ -40,7 +40,7 @@ public class HealCommand extends CommandUtils implements CommandExecutor {
                             tplayer.setFoodLevel(20);
                             psend(p, healOther + tplayer.getName());
                             if (!healSilent) {
-                                psend(tplayer, healMsg + " §aby §f" + p.getName());
+                                psend(tplayer, healMsg + " Â§aby Â§f" + p.getName());
                             } else psend(tplayer, healMsg);
                         } else psend(p, noPlayerFound);
                     } else psend(p, noPerms);

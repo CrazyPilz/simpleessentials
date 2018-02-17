@@ -19,8 +19,8 @@ public class NightCommand extends CommandUtils implements CommandExecutor {
         final String noWorldFound = prefix + " " + getPluginNoWorldFound();
         final String permsall = getPermsAll();
         final String perms = "SimpleEssentials.night.";
-        final String nightself = prefix + " §aSwitched time to night";
-        final String nightother = prefix + " §a Switched time to night in world §f";
+        final String nightself = prefix + " Â§aSwitched time to night";
+        final String nightother = prefix + " Â§a Switched time to night in world Â§f";
         final boolean nightbc = isPluginNightBc();
 
         if (sender instanceof Player) {

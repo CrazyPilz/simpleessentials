@@ -14,7 +14,7 @@ public class JoinListener extends CommandUtils implements Listener {
     public void onPlayerJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
         FileConfiguration cfg = Main.getPlugin().getConfig();
-        String joinMsg = cfg.getString("Plugin-Join-Msg").replace("&", "ง").replace("%player%", p.getName());
+        String joinMsg = cfg.getString("Plugin-Join-Msg").replace("&", "ยง").replace("%player%", p.getName());
         if (!isVanished(p)) {
             e.setJoinMessage(joinMsg);
         } else e.setJoinMessage(null);

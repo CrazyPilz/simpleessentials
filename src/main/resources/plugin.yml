@@ -41,3 +41,5 @@ commands:
    vanish:
       description: Vanishes the player
       aliases: [v]
+   ping:
+      description: Gets the players ping

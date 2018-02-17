@@ -11,7 +11,7 @@ public class QuitListener extends CommandUtils implements Listener {
     @EventHandler
     public void onPlayerQuit(PlayerQuitEvent e) {
         Player p = e.getPlayer();
-        String quitMsg = getCfg().getString("Plugin-Quit-Msg").replace("&", "ง").replace("%player%", p.getName());
+        String quitMsg = getCfg().getString("Plugin-Quit-Msg").replace("&", "ยง").replace("%player%", p.getName());
         if (!isVanished(p)) {
             e.setQuitMessage(quitMsg);
         } else e.setQuitMessage(null);

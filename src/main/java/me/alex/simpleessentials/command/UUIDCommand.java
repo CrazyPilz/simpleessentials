@@ -22,9 +22,9 @@ public class UUIDCommand extends CommandUtils implements CommandExecutor {
         String noPlayerFound = prefix + " " + getPluginNoPlayerFound();
         String perms = "SimpleEssentials.uuid.";
         String permsAll = getPermsAll();
-        String uuidSelf = prefix + " §aYour UUID is: §f";
+        String uuidSelf = prefix + " Â§aYour UUID is: Â§f";
         String uuidOther;
-        String cc = prefix + " §aCopied the UUID to your clipboard!";
+        String cc = prefix + " Â§aCopied the UUID to your clipboard!";
         Clipboard c = Toolkit.getDefaultToolkit().getSystemClipboard();
         StringSelection selection;
 
@@ -43,7 +43,7 @@ public class UUIDCommand extends CommandUtils implements CommandExecutor {
                     Player tplayer = Bukkit.getPlayerExact(args[0]);
                     if (perm(p, perms + "other") || perm(p, perms + "*") || perm(p, permsAll)) {
                         if (tplayer != null) {
-                            uuidOther = prefix + " §f" + tplayer.getName() + "§a's UUID is: §f";
+                            uuidOther = prefix + " Â§f" + tplayer.getName() + "Â§a's UUID is: Â§f";
                             String uuid = tplayer.getUniqueId().toString();
                             psend(p, uuidOther + uuid);
                             selection = new StringSelection(uuid);

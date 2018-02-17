@@ -19,8 +19,8 @@ public class DayCommand extends CommandUtils implements CommandExecutor {
         final String noPerms = prefix + " " + getPluginNoPerms();
         final String usage = prefix + " " + getPluginUsage();
         final String noWorldFound = prefix + " " + getPluginNoWorldFound();
-        final String dayother = prefix + " §aSwitched time to day in world §f";
-        final String dayself = prefix + " §aSwitched time to day";
+        final String dayother = prefix + " Â§aSwitched time to day in world Â§f";
+        final String dayself = prefix + " Â§aSwitched time to day";
         final String perms = "SimpleEssentials.day.";
         final String permsall = getPermsAll();
         final boolean daybc = isPluginDayBc();
@@ -54,7 +54,7 @@ public class DayCommand extends CommandUtils implements CommandExecutor {
                             if (daybc) {
                                 //Sends all players in the world a msg
                                 for (Player player : w.getPlayers()) {
-                                    psend(player,prefix + " §aThe time in your world was switched to day by §f" + p.getName());
+                                    psend(player,prefix + " Â§aThe time in your world was switched to day by Â§f" + p.getName());
                                 }
                             }
                             //Else sends noWorldFound msg

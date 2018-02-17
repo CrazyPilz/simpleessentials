@@ -18,9 +18,9 @@ public class WorkbenchCommand extends CommandUtils implements CommandExecutor {
         String noPlayerFound = prefix + " " + getPluginNoPlayerFound();
         String perms = "SimpleEssentials.workbench.";
         String permsAll = getPermsAll();
-        String wbSelf = prefix + " §aOpened workbench";
-        String wbOther = prefix + " §aOpened workbench for §f";
-        String wbOtherMsg = prefix + " §aYou opened the workbench thanks to §f";
+        String wbSelf = prefix + " Â§aOpened workbench";
+        String wbOther = prefix + " Â§aOpened workbench for Â§f";
+        String wbOtherMsg = prefix + " Â§aYou opened the workbench thanks to Â§f";
         boolean wbOtherSilent = isPluginWorkbenchSilent();
 
         if (sender instanceof Player) {

@@ -61,12 +61,16 @@
         </repository>
     </repositories>
     <dependencies>
-        <!--Spigot API-->
+        <!-- Spigot API -->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.12.2-R0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>LATEST</version>
-            <scope>provided</scope>
+            <version>1.12.2-R0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

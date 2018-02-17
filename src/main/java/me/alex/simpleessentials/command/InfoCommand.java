@@ -22,9 +22,9 @@ public class InfoCommand extends CommandUtils implements CommandExecutor {
             if (args.length == 0) {
                 if (p.hasPermission("SimpleEssentials.info") || p.hasPermission("SimpleEssentials.*")) {
                     //Sends Messages
-                    psend(p, prefix + " ง2Simple Essentials");
-                    psend(p, prefix + " ง7Made by ChefPilz");
-                    psend(p, prefix + " ง7Version " + version);
+                    psend(p, prefix + " ยง2Simple Essentials");
+                    psend(p, prefix + " ยง7Made by ChefPilz");
+                    psend(p, prefix + " ยง7Version " + version);
                 } else psend(p, noPerms);
             } else psend(p, usage + " /info");
         }

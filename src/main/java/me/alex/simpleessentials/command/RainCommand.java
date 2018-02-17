@@ -19,8 +19,8 @@ public class RainCommand extends CommandUtils implements CommandExecutor {
         String noPerms = prefix + " " + getPluginNoPerms();
         String usage = prefix + " " + getPluginUsage();
         String noWorldFound = prefix + " " + getPluginNoWorldFound();
-        String rainSelf = prefix + " §aSwitched weather to rain";
-        String rainOther = prefix + " §aSwitched weather to rain in world §f";
+        String rainSelf = prefix + " Â§aSwitched weather to rain";
+        String rainOther = prefix + " Â§aSwitched weather to rain in world Â§f";
         String perms = "SimpleEssentials.rain.";
         String permsAll = getPermsAll();
         boolean rainBc = isPluginRainBc();
@@ -43,7 +43,7 @@ public class RainCommand extends CommandUtils implements CommandExecutor {
                             psend(p, rainOther + w.getName());
                             if (rainBc) {
                                 for (Player player : w.getPlayers()) {
-                                    psend(player, prefix + " §aThe weather in your world was switched to rain by §f" + p.getName());
+                                    psend(player, prefix + " Â§aThe weather in your world was switched to rain by Â§f" + p.getName());
                                 }
                             }
                         } else psend(p, noWorldFound);

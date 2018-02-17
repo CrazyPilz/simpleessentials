@@ -25,7 +25,7 @@ public class DebugListener extends CommandUtils implements Listener {
                 List<String> list = Config.getConfig("debugPlayers").getStringList("Debug");
                 if (list.contains(player.getUniqueId().toString())) {
                     //Sends debug info
-                    psend(player, "§f[§cDEBUG§f] §f" + prefix + " " + p.getName() + " executed " + cmd);
+                    psend(player, "Â§f[Â§cDEBUGÂ§f] Â§f" + prefix + " " + p.getName() + " executed " + cmd);
                 }
             }
         }

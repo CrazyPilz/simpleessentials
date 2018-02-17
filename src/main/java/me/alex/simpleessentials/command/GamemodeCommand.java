@@ -23,8 +23,8 @@ public class GamemodeCommand extends CommandUtils implements CommandExecutor, Ta
         final String noPerms = prefix + " " + getPluginNoPerms();
         final String usage = prefix + " " + getPluginUsage();
         final String noPlayerFound = prefix + " " + getPluginNoPlayerFound();
-        final String gmself = prefix + " " + "§aGamemode changed to §f";
-        final String gmother = prefix + " " + "§aYou changed the gamemode of §f";
+        final String gmself = prefix + " " + "Â§aGamemode changed to Â§f";
+        final String gmother = prefix + " " + "Â§aYou changed the gamemode of Â§f";
         final String permss = getPermsAll();
         final String permsall = "SimpleEssentials.gamemode.";
         final String perms = "SimpleEssentials.gamemode.survival.";
@@ -102,7 +102,7 @@ public class GamemodeCommand extends CommandUtils implements CommandExecutor, Ta
                                     //Sets gamemode and messages both players
                                     tplayer.setGameMode(GameMode.SURVIVAL);
                                     psend(tplayer, gmself + GameMode.SURVIVAL.name());
-                                    psend(p, gmother + tplayer.getName() + " §ato §f" + GameMode.SURVIVAL.name());
+                                    psend(p, gmother + tplayer.getName() + " Â§ato Â§f" + GameMode.SURVIVAL.name());
                                     //Else send NoPerms Msg
                                 } else psend(p, noPerms);
                                 //Checks if the first argument is correct
@@ -112,7 +112,7 @@ public class GamemodeCommand extends CommandUtils implements CommandExecutor, Ta
                                     //Sets gamemode and messages both players
                                     tplayer.setGameMode(GameMode.CREATIVE);
                                     psend(tplayer, gmself + GameMode.CREATIVE.name());
-                                    psend(p, gmother + tplayer.getName() + " §ato §f" + GameMode.CREATIVE.name());
+                                    psend(p, gmother + tplayer.getName() + " Â§ato Â§f" + GameMode.CREATIVE.name());
                                     //Else send NoPerms Msg
                                 } else psend(p, noPerms);
                                 //Checks if the first argument is correct
@@ -122,7 +122,7 @@ public class GamemodeCommand extends CommandUtils implements CommandExecutor, Ta
                                     //Sets gamemode and messages both players
                                     tplayer.setGameMode(GameMode.ADVENTURE);
                                     psend(tplayer, gmself + GameMode.ADVENTURE.name());
-                                    psend(p, gmother + tplayer.getName() + " §ato §f" + GameMode.ADVENTURE.name());
+                                    psend(p, gmother + tplayer.getName() + " Â§ato Â§f" + GameMode.ADVENTURE.name());
                                     //Else send NoPerms Msg
                                 } else psend(p, noPerms);
                                 //Checks if the first argument is correct
@@ -132,7 +132,7 @@ public class GamemodeCommand extends CommandUtils implements CommandExecutor, Ta
                                     //Sets gamemode and messages both players
                                     tplayer.setGameMode(GameMode.SPECTATOR);
                                     psend(tplayer, gmself + GameMode.SPECTATOR.name());
-                                    psend(p, gmother + tplayer.getName() + " §ato §f" + GameMode.SPECTATOR.name());
+                                    psend(p, gmother + tplayer.getName() + " Â§ato Â§f" + GameMode.SPECTATOR.name());
                                     //Else send NoPerms Msg
                                 } else psend(p, noPerms);
                                 //Else send Usage

@@ -17,8 +17,8 @@ public class StormCommand extends CommandUtils implements CommandExecutor {
         String noPerms = prefix + " " + getPluginNoPerms();
         String usage = prefix + " " + getPluginUsage();
         String noWorldFound = prefix + " " + getPluginNoWorldFound();
-        String stormSelf = prefix + " §aSwitched weather to storm";
-        String stormOther = prefix + " §aSwitched weather to storm in world §f";
+        String stormSelf = prefix + " Â§aSwitched weather to storm";
+        String stormOther = prefix + " Â§aSwitched weather to storm in world Â§f";
         String perms = "SimpleEssentials.storm.";
         String permsAll = getPermsAll();
         boolean stormBc = isPluginStormBc();
@@ -41,7 +41,7 @@ public class StormCommand extends CommandUtils implements CommandExecutor {
                             psend(p, stormOther + w.getName());
                             if (stormBc) {
                                 for (Player player : w.getPlayers()) {
-                                    psend(player, prefix + " §aThe weather in your world was switched to storm by §f" + p.getName());
+                                    psend(player, prefix + " Â§aThe weather in your world was switched to storm by Â§f" + p.getName());
                                 }
                             }
                         } else psend(p, noWorldFound);

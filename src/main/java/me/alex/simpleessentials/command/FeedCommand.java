@@ -18,9 +18,9 @@ public class FeedCommand extends CommandUtils implements CommandExecutor {
         String noPlayerFound = prefix + " " + getPluginNoPlayerFound();
         String perms = "SimpleEssentials.feed.";
         String permsAll = getPermsAll();
-        String feedSelf = prefix + " §aFed yourself";
-        String feedOther = prefix + " §aFed §f";
-        String feedMsg = prefix + " §aYou have been fed";
+        String feedSelf = prefix + " Â§aFed yourself";
+        String feedOther = prefix + " Â§aFed Â§f";
+        String feedMsg = prefix + " Â§aYou have been fed";
         boolean feedSilent = isPluginFeedSilent();
 
         if (sender instanceof Player) {
@@ -38,7 +38,7 @@ public class FeedCommand extends CommandUtils implements CommandExecutor {
                             tplayer.setFoodLevel(20);
                             psend(p, feedOther + tplayer.getName());
                             if (!feedSilent) {
-                                psend(tplayer, feedMsg + " §aby §f" + p.getName());
+                                psend(tplayer, feedMsg + " Â§aby Â§f" + p.getName());
                             } else psend(tplayer, feedMsg);
                         } else psend(p, noPlayerFound);
                     } else psend(p, noPerms);
